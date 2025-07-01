@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de développeur passionné IoT & Data Analysis">
+  <title>Portfolio - Développeur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========== PROGRESS BAR ========== -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ========== OVERLAY POUR LE MENU ========== -->
+  <div class="menu-overlay"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon">P</div>
+        <div>
+          <div class="logo-text">Portfolio</div>
+          <div class="logo-subtext">Data</div>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-item active">🏠 Accueil</a></li>
+          <li><a href="#about" class="nav-item">👨‍💻 À propos</a></li>
+          <li><a href="#projects" class="nav-item">🚀 Projets</a></li>
+          <li><a href="#contact" class="nav-item">📧 Contact</a></li>
+        </ul>
+      </nav>
+      <a href="mailto:amirou.labidi@gmail.com" class="btn btn--primary">Me contacter</a>
+      <button class="mobile-menu-btn" aria-label="Menu mobile">
+        <span class="burger-icon" id="menu-icon">☰</span>
+      </button>
+    </div>
+    
+    <!-- ========== MENU BURGER MODERNE ========== -->
+    <div class="mobile-menu" id="mobile-menu">
+      <!-- Header du menu -->
+      <div class="menu-header">
+        <h3>Navigation</h3>
+        <p>Découvrez mon portfolio</p>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="menu-nav">
+        <a href="#home" class="menu-item active">
+          <span class="menu-icon">🏠</span>
+          <span>Accueil</span>
+        </a>
+        <a href="#about" class="menu-item">
+          <span class="menu-icon">👨‍💻</span>
+          <span>À propos</span>
+        </a>
+        <a href="#projects" class="menu-item">
+          <span class="menu-icon">🚀</span>
+          <span>Projets</span>
+        </a>
+        <a href="#contact" class="menu-item">
+          <span class="menu-icon">📧</span>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <!-- Footer du menu -->
+      <div class="menu-footer">
+        <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
+          📧 Contactez-moi
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <!-- ========== PARTICLES BACKGROUND ========== -->
+      <div id="particles-js"></div>
+      
+      <div class="hero-container fade-in">
+        <div class="hero-avatar">👨🏻‍💻</div>
+        <h1 class="hero-title">Amir Labidi</h1>
+        <h2 class="hero-subtitle">Data Analyst</h2>
+        <p class="hero-description">
+          Je crée des solutions innovantes qui transforment les données en insights précieux
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn--secondary">Voir mes projets</a>
+          <a href="#contact" class="btn btn--outline">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title fade-in">À propos de moi</h2>
+        <div class="about-content fade-in">
+          <div class="about-image photo">
+            <img src="assets/images/amirpic.png" alt="Amir Labidi - Data Analyst">
+          </div>
+          <div class="about-text">
+            <h3>Junior Data Analyst & Developer</h3>
+            <p>
+              Passionné par l'innovation technologique, je me spécialise dans le développement 
+              de solutions IoT et l'analyse de données massives. Mon expérience chez TPM m'a 
+              permis de maîtriser l'intégration de systèmes complexes et l'automatisation 
+              de processus critiques.
+            </p>
+            <p>
+              J'ai développé des compétences approfondies en Python, en traitement de données 
+              géospatiales avec ESRI ArcGIS, et en création de systèmes de surveillance 
+              automatisés. Mon approche combine rigueur technique et créativité pour 
+              résoudre des problèmes complexes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title fade-in">Mes Projets</h2>
+        <div class="projects-grid">
+          <!-- Waze TPM -->
+          <div class="project-card project-card--blue fade-in">
+            <div class="project-icon">📍</div>
+            <h3 class="project-title">Projet Waze - Stage TPM</h3>
+            <p class="project-description">
+              Analyse des alertes Waze via compte partenaire TPM pour extraire et cartographier 
+              les alertes de la région. Développement d'une solution de surveillance du trafic en 
+              temps réel avec scripts automatisés et cartes ESRI interactives.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">ESRI ArcGIS</span>
+              <span class="project-tag">Waze API</span>
+              <span class="project-tag">Géolocalisation</span>
+              <span class="project-tag">Stage TPM</span>
+            </div>
+            <a href="dashboard-waze.html" class="project-link">Voir les détails →</a>
+          </div>
+          <!-- IoT -->
+          <div class="project-card project-card--green fade-in">
+            <div class="project-icon">📊</div>
+            <h3 class="project-title">E-Surveillance Capteurs IoT</h3>
+            <p class="project-description">
+              Système de surveillance automatisée des capteurs IoT avec vérification quotidienne 
+              à 19h. Script Python qui détecte les ouvertures anormales et envoie automatiquement 
+              des emails d'alerte au personnel de maintenance.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">Automatisation</span>
+              <span class="project-tag">Email Alerts</span>
+              <span class="project-tag">Capteurs</span>
+            </div>
+            <a href="dashboard-iot.html" class="project-link">Voir les détails →</a>
+          </div>
+          <!-- Pollen -->
+          <div class="project-card project-card--pink fade-in">
+            <div class="project-icon">🐝</div>
+            <h3 class="project-title">Prévention du Pollen</h3>
+            <p class="project-description">
+              Développement d'un pipeline de données pour détecter les pics de pollen à partir 
+              de données environnementales. Mise en place d'alertes automatiques par e-mail selon 
+              des seuils définis. Données issues de capteurs connectés via la plateforme REQUA, 
+              traitées en Python avec intégration SIG (GIS).
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">GIS Python</span>
+              <span class="project-tag">Data Viz</span>
+              <span class="project-tag">Environnement</span>
+              <span class="project-tag">Dashboard</span>
+              <span class="project-tag">REQUA</span>
+            </div>
+            <a href="amirpollen.html" class="project-link">Voir les détails →</a>
+          </div>
+          <!-- Suivi Conso -->
+          <div class="project-card project-card--yellow fade-in">
+            <div class="project-icon">🕦</div>
+            <h3 class="project-title">Mobilité du personnel de TPM , SNCF-Réseau Mistral</h3>
+            <p class="project-description">
+              Développement de scripts Python pour le calcul et le suivi des horaires de trains et de bus, 
+              dans le but de simplifier le quotidien du personnel de TPM
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">JSON-XML</span>
+              <span class="project-tag">SNCF</span>
+              <span class="project-tag">Réseau-Mistral</span>
+            </div>
+            <a href="labidiconso.html" class="project-link">Voir les détails →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div id="particles-contact"></div> 
+      <div class="container">
+        <h2 class="section-title fade-in" style="color:white;">Contactez-moi</h2>
+        <p class="fade-in">Prêt à collaborer sur votre prochain projet ? N'hésitez pas à me contacter !</p>
+        <div class="contact-links fade-in">
+          <a href="mailto:amirou.labidi@gmail.com" class="contact-link">📧 Email</a>
+          <a href="https://linkedin.com/in/votre-profil" class="contact-link">💼 LinkedIn</a>
+          <a href="https://github.com/votre-username" class="contact-link">🐱 GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 💡 Développé pendant mon stage à TPM - Plus de 350 vues par les utilisateurs de la métropole</p>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

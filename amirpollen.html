@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Détails du projet Prévention du Pollen">
+  <title>Prévention du Pollen – Détails</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pollen-detail">
+  <div class="menu-overlay"></div> 
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon">P</div>
+        <div>
+          <div class="logo-text">Portfolio</div>
+          <div class="logo-subtext">Développeur</div>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html#home" class="nav-item">🏠 Accueil</a></li>
+          <li><a href="index.html#about" class="nav-item">👨‍💻 À propos</a></li>
+          <li><a href="index.html#projects" class="nav-item active">🚀 Projets</a></li>
+          <li><a href="index.html#contact" class="nav-item">📧 Contact</a></li>
+        </ul>
+      </nav>
+      <a href="mailto:amirou.labidi@gmail.com" class="btn btn--primary">Me contacter</a>
+      <div class="mobile-buttons">
+        <a href="mailto:amirou.labidi@gmail.com" class="mobile-contact-btn">Me contacter</a>
+        <button class="mobile-menu-btn" aria-label="Menu mobile">
+  <span id="menu-icon">☰</span>
+         </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+  <!-- Header du menu -->
+  <div class="menu-header">
+    <h3>Navigation</h3>
+    <p>Découvrez mon portfolio</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="menu-nav">
+    <a href="index.html#home" class="menu-item">
+      <span class="menu-icon">🏠</span>
+      <span>Accueil</span>
+    </a>
+    <a href="index.html#about" class="menu-item">
+      <span class="menu-icon">👨‍💻</span>
+      <span>À propos</span>
+    </a>
+    <a href="index.html#projects" class="menu-item active">
+      <span class="menu-icon">🚀</span>
+      <span>Projets</span>
+    </a>
+    <a href="index.html#contact" class="menu-item">
+      <span class="menu-icon">📧</span>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- Footer du menu -->
+  <div class="menu-footer">
+    <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
+      📧 Contactez-moi
+    </a>
+  </div>
+</div>
+  </header>
+   
+  <!-- MAIN -->
+  <main class="container">
+    <section class="project-detail fade-in">
+      <h1>Prévention du Pollen</h1>
+       
+      <div class="detail-grid">
+        <!-- Colonne 1 : GALERIE D'IMAGES -->
+        <div class="project-gallery">
+          <!-- Première section avec image -->
+          <div class="gallery-section">
+            <figure class="dashboard-figure">
+              <img
+                src="assets/images/pauline.png"
+                alt="Capture d'écran de l'application de prévention du pollen"
+                class="project-detail-image"
+              >
+              <figcaption>Application mobile de prédiction des pics de pollen avec géolocalisation.</figcaption>
+            </figure>
+          </div>
+
+          <!-- Titre pour la deuxième section -->
+          <h3 class="gallery-title">Interface utilisateur</h3>
+          
+          <!-- Deuxième section avec image -->
+          <div class="gallery-section">
+            <figure class="dashboard-figure">
+              <img
+                src="assets/images/pollen2.png"
+                alt="Interface utilisateur de l'application pollen"
+                class="project-detail-image"
+              >
+              <figcaption>Interface mobile avec alertes personnalisées et cartes interactives.</figcaption>
+            </figure>
+          </div>
+        </div>
+         
+        <!-- Colonne 2 : CONTENU STYLÉ AVEC CARTES -->
+        <div class="project-detail-content">
+          
+          <!-- Carte Contexte -->
+          <div class="context-card">
+            <h2>Contexte</h2>
+            <p>
+              Application de prédiction des pics de pollen basée sur l'analyse de données 
+              météorologiques et environnementales. Développement d'un système d'alerte 
+              personnalisé pour les personnes allergiques avec géolocalisation temps réel 
+              et notifications push adaptées aux différents types de pollens.
+            </p>
+          </div>
+
+          <!-- Carte Technologies -->
+          <div class="tech-card">
+            <h2>Technologies utilisées</h2>
+            <div class="tech-grid">
+              <div class="tech-item">API REQUEA & Données Environnementales</div>
+              <div class="tech-item">Géolocalisation & Cartographie</div>
+              <div class="tech-item">Data Visualization</div>
+              <div class="tech-item">Notifications Push & Alertes temps réel</div>
+            </div>
+          </div>
+
+          <!-- Carte Résultats -->
+          <div class="results-card">
+            <h2>Résultats obtenus</h2>
+            <div class="result-item">
+              <div class="result-icon">✓</div>
+              <div class="result-text">Prédiction précise des pics de pollen</div>
+            </div>
+            <div class="result-item">
+              <div class="result-icon">✓</div>
+              <div class="result-text">Alertes personnalisées par type d'allergie</div>
+            </div>
+            <div class="result-item">
+              <div class="result-icon">✓</div>
+              <div class="result-text">Interface mobile avec cartes interactives</div>
+            </div>
+            <div class="result-item">
+              <div class="result-icon">✓</div>
+              <div class="result-text">Amélioration qualité de vie des allergiques</div>
+            </div>
+          </div>
+
+          <!-- Boutons d'action -->
+          <div class="project-buttons">
+            <a
+              href="https://github.com/VOTRE_UTILISATEUR/REPO-POLLEN/blob/main/pollen_prediction.py"
+              class="btn btn--primary"
+              target="_blank"
+              rel="noopener"
+            >
+              📂 Voir mon script Python
+            </a>
+            <a href="index.html#projects" class="btn btn--secondary">
+              ← Retour aux projets
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+   
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Portfolio. Développé avec passion ❤️</p>
+    </div>
+  </footer>
+   
+  <script src="script.js" defer></script>
+</body>
+</html>

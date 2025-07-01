@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Détails du projet E-Surveillance Capteurs IoT">
+  <title>E-Surveillance Capteurs IoT – Détails</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="iot-detail">
+  <div class="menu-overlay"></div> 
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon">P</div>
+        <div>
+          <div class="logo-text">Portfolio</div>
+          <div class="logo-subtext">Développeur</div>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html#home" class="nav-item">🏠 Accueil</a></li>
+          <li><a href="index.html#about" class="nav-item">👨‍💻 À propos</a></li>
+          <li><a href="index.html#projects" class="nav-item active">🚀 Projets</a></li>
+          <li><a href="index.html#contact" class="nav-item">📧 Contact</a></li>
+        </ul>
+      </nav>
+      <a href="mailto:amirou.labidi@gmail.com" class="btn btn--primary">Me contacter</a>
+      <div class="mobile-buttons">
+        <a href="mailto:amirou.labidi@gmail.com" class="mobile-contact-btn">Me contacter</a>
+        <button class="mobile-menu-btn" aria-label="Menu mobile">
+  <span class="burger-icon" id="menu-icon">☰</span>
+</button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+  <!-- Header du menu -->
+  <div class="menu-header">
+    <h3>Navigation</h3>
+    <p>Découvrez mon portfolio</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="menu-nav">
+    <a href="index.html#home" class="menu-item">
+      <span class="menu-icon">🏠</span>
+      <span>Accueil</span>
+    </a>
+    <a href="index.html#about" class="menu-item">
+      <span class="menu-icon">👨‍💻</span>
+      <span>À propos</span>
+    </a>
+    <a href="index.html#projects" class="menu-item active">
+      <span class="menu-icon">🚀</span>
+      <span>Projets</span>
+    </a>
+    <a href="index.html#contact" class="menu-item">
+      <span class="menu-icon">📧</span>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- Footer du menu -->
+  <div class="menu-footer">
+    <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
+      📧 Contactez-moi
+    </a>
+  </div>
+</div>
+  </header>
+   
+  <!-- MAIN -->
+  <main class="container">
+    <section class="project-detail fade-in">
+      <h1>E-Surveillance Capteurs IoT</h1>
+       
+      <div class="detail-grid">
+        <!-- Colonne 1 : GALERIE D'IMAGES -->
+        <div class="project-gallery">
+          <!-- Première section avec image -->
+          <div class="gallery-section">
+            <figure class="dashboard-figure">
+              <img
+                src="assets/images/ioty.png"
+                alt="Capture d'écran du dashboard de surveillance IoT"
+                class="project-detail-image"
+              >
+              <figcaption>Dashboard de surveillance automatisée des capteurs IoT.</figcaption>
+            </figure>
+          </div>
+
+          <!-- Titre pour la deuxième section -->
+          <h3 class="gallery-title">Architecture du système</h3>
+          
+          <!-- Deuxième section avec image -->
+          <div class="gallery-section">
+            <figure class="dashboard-figure">
+              <img
+                src="assets/images/mailiot.png"
+                alt="Architecture technique du système IoT"
+                class="project-detail-image"
+              >
+              <figcaption>Schéma de l'architecture technique mise en place.</figcaption>
+            </figure>
+          </div>
+        </div>
+         
+        <!-- Colonne 2 : CONTENU STYLÉ AVEC CARTES -->
+        <div class="project-detail-content">
+          
+          <!-- Carte Contexte -->
+          <div class="context-card">
+            <h2>Contexte</h2>
+            <p>
+              Mise en place d'un système de surveillance automatisée de 150 capteurs IoT,
+              avec un script Python exécuté chaque jour à 19 h. Il détecte
+              les ouvertures anormales et déclenche l'envoi d'emails d'alerte au
+              personnel de maintenance.
+            </p>
+          </div>
+
+          <!-- Carte Technologies -->
+          <div class="tech-card">
+            <h2>Technologies utilisées</h2>
+            <div class="tech-grid">
+              <div class="tech-item">Python (script de surveillance)</div>
+              <div class="tech-item">IoT (capteurs & protocoles MQTT/HTTP)</div>
+              <div class="tech-item">Plateforme REQUEA (Pour les capteurs)</div>
+              <div class="tech-item">SMTP / Email Alerts</div>
+            </div>
+          </div>
+
+          <!-- Carte Résultats -->
+          <div class="results-card">
+            <h2>Résultats obtenus</h2>
+            <div class="result-item">
+              <div class="result-icon">✓</div>
+              <div class="result-text">Détection automatisée des anomalies</div>
+            </div>
+            <div class="result-item">
+              <div class="result-icon">✓</div>
+              <div class="result-text">Envoi d'alertes email en temps réel</div>
+            </div>
+            <div class="result-item">
+              <div class="result-icon">✓</div>
+              <div class="result-text">Fiabilisation de la maintenance préventive</div>
+            </div>
+            <div class="result-item">
+              <div class="result-icon">✓</div>
+              <div class="result-text">Visualisation claire via un dashboard quotidien</div>
+            </div>
+          </div>
+
+          <!-- Boutons d'action -->
+          <div class="project-buttons">
+            <a
+              href="https://github.com/VOTRE_UTILISATEUR/REPO-IOT/blob/main/iot_monitor.py"
+              class="btn btn--primary"
+              target="_blank"
+              rel="noopener"
+            >
+              📂 Voir mon script Python
+            </a>
+            <a href="index.html#projects" class="btn btn--secondary">
+              ← Retour aux projets
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+   
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Portfolio. Développé avec passion ❤️</p>
+    </div>
+  </footer>
+   
+  <script src="script.js" defer></script>
+</body>
+</html>
