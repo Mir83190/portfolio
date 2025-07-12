@@ -168,15 +168,42 @@ html { scroll-behavior: smooth; }
 }
 .menu-overlay.open { opacity:1; visibility:visible; }
 
-/* Header du menu */
+/* Header du menu - OPTIMISÉ POUR MOBILE */
 .menu-header {
-  padding:24px;
+  padding:32px 24px 24px 24px;
   background: var(--gradient-primary);
   color:white;
-  border-bottom:1px solid #f1f5f9;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  position:relative;
+  overflow:hidden;
 }
-.menu-header h3 { font-size:18px; font-weight:600; margin-bottom:4px; }
-.menu-header p  { font-size:14px; opacity:.9; }
+.menu-header::before {
+  content:'';
+  position:absolute;
+  top:-50%;
+  right:-20%;
+  width:200px;
+  height:200px;
+  background:rgba(255,255,255,0.1);
+  border-radius:50%;
+  transform:rotate(45deg);
+}
+.menu-header h3 { 
+  font-size:22px; 
+  font-weight:700; 
+  margin-bottom:8px; 
+  position:relative;
+  z-index:2;
+  letter-spacing:0.5px;
+}
+.menu-header p  { 
+  font-size:15px; 
+  opacity:0.95; 
+  position:relative;
+  z-index:2;
+  line-height:1.4;
+  font-weight:400;
+}
 
 /* Nav du menu */
 .menu-nav { flex:1; padding:24px 0; }
@@ -950,28 +977,22 @@ body:not(.iot-detail):not(.pollen-detail):not(.suivi-detail) .tech-item:hover {
   /* PAS DE BOUTON CONTACT MOBILE - POINT 1 */
   .mobile-contact-btn { display:none !important; }
 
-  /* === COULEURS BOUTONS MOBILES === */
+  /* === COULEURS BOUTONS MOBILES VIOLET === */
   .mobile-menu-btn {
     width:44px !important; height:44px !important;
     border:none !important; border-radius:12px !important;
     cursor:pointer !important; font-size:16px !important;
     transition: all .3s ease !important;
+    background: var(--gradient-primary) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(139,92,246,0.3) !important;
   }
   
-  /* Couleurs par projet */
-  body:not(.iot-detail):not(.pollen-detail):not(.suivi-detail) .mobile-menu-btn {
-    background: #3b82f6 !important; color: white !important;
+  .mobile-menu-btn:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 20px rgba(139,92,246,0.4) !important;
   }
-  .iot-detail .mobile-menu-btn {
-    background: #10b981 !important; color: white !important;
-  }
-  .pollen-detail .mobile-menu-btn {
-    background: #ec4899 !important; color: white !important;
-  }
-  .suivi-detail .mobile-menu-btn {
-    background: #79a7d3 !important; color: #1f2937 !important;
-  }
-
+  
   /* === SECTIONS MOBILE === */
   section { padding-top:70px; }
   .container { padding:0 16px; }
@@ -1246,7 +1267,7 @@ body:not(.iot-detail):not(.pollen-detail):not(.suivi-detail) .tech-item:hover {
   }
 }
 
-  /* === TRÈS PETITS ÉCRANS === */
+/* === TRÈS PETITS ÉCRANS === */
 @media (max-width:480px) {
   .nav-container { padding:8px 12px; }
   .container { padding:0 8px; }
