@@ -148,7 +148,7 @@ html { scroll-behavior: smooth; }
 /* Menu déroulant moderne */
 .mobile-menu {
   position: fixed; top:0; right:-100%;
-  width:320px; height:100vh;
+  width:280px; height:100vh;
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(20px);
   transition: right .4s cubic-bezier(0.4,0,0.2,1);
@@ -170,7 +170,7 @@ html { scroll-behavior: smooth; }
 
 /* Header du menu - OPTIMISÉ POUR MOBILE */
 .menu-header {
-  padding:32px 24px 24px 24px;
+  padding:24px 20px 20px 20px;
   background: var(--gradient-primary);
   color:white;
   border-bottom:1px solid rgba(255,255,255,0.1);
@@ -189,15 +189,15 @@ html { scroll-behavior: smooth; }
   transform:rotate(45deg);
 }
 .menu-header h3 { 
-  font-size:22px; 
+  font-size:20px; 
   font-weight:700; 
-  margin-bottom:8px; 
+  margin-bottom:6px; 
   position:relative;
   z-index:2;
   letter-spacing:0.5px;
 }
 .menu-header p  { 
-  font-size:15px; 
+  font-size:14px; 
   opacity:0.95; 
   position:relative;
   z-index:2;
@@ -206,15 +206,15 @@ html { scroll-behavior: smooth; }
 }
 
 /* Nav du menu */
-.menu-nav { flex:1; padding:24px 0; }
+.menu-nav { flex:1; padding:20px 0; }
 .menu-item {
-  display:flex; align-items:center; gap:16px;
-  padding:16px 24px;
+  display:flex; align-items:center; gap:14px;
+  padding:14px 20px;
   color:#374151; font-weight:500;
   text-decoration:none;
   transition: all .3s ease;
   border-left:4px solid transparent;
-  margin:4px 0;
+  margin:3px 0;
   opacity:0; transform: translateX(20px);
   animation: slideInMenu .3s ease forwards;
 }
@@ -236,11 +236,11 @@ html { scroll-behavior: smooth; }
   border-left-color: var(--color-primary);
   color: var(--color-primary);
 }
-.menu-icon { font-size:20px; width:24px; text-align:center; }
+.menu-icon { font-size:18px; width:22px; text-align:center; }
 
 /* Footer du menu */
 .menu-footer {
-  padding:24px;
+  padding:20px;
   background:#f8fafc;
   border-top:1px solid #f1f5f9;
 }
