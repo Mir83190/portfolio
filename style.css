@@ -1347,3 +1347,50 @@ html { scroll-behavior:smooth; }
     transform:none;
   }
 }
+/* === INVERSION DES PROJETS IOT ET MOBILITE === */
+
+/* Ordre par défaut pour tous les projets */
+.projects-grid .project-card {
+  order: 0;
+}
+
+/* Ordre spécifique pour l'inversion sur desktop (2 colonnes) */
+@media (min-width: 769px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+  }
+  
+  /* Waze reste en position 1 (haut gauche) */
+  .project-card:nth-child(1) {
+    order: 1;
+  }
+  
+  /* Mobilité passe en position 2 (haut droite) - avant c'était IoT */
+  .project-card:nth-child(4) {
+    order: 2;
+  }
+  
+  /* Pollen reste en position 3 (bas gauche) */
+  .project-card:nth-child(3) {
+    order: 3;
+  }
+  
+  /* IoT passe en position 4 (bas droite) - avant c'était Mobilité */
+  .project-card:nth-child(2) {
+    order: 4;
+  }
+}
+
+/* Sur mobile et tablette (1 colonne), l'ordre naturel est maintenu */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-card {
+    order: unset; /* Garde l'ordre naturel du HTML */
+  }
+}
