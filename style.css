@@ -10,9 +10,7 @@
   --color-yellow: #79a7d3; 
   
   /* NOUVEAUX DÉGRADÉS VIOLETS */
-  --gradient-primary: linear-gradient(135deg, #2d3748, #2d3748);
-  --gradient-hero:    linear-gradient(135deg, #2d3748, #2d3748, #2d3748);
-  --gradient-contact: linear-gradient(135deg, #2d3748, #2d3748, #2d3748);
+  
   --gradient-green:   linear-gradient(135deg, var(--color-green), var(--color-green-2));
   --gradient-pink:    linear-gradient(135deg, var(--color-pink), var(--color-orange));
   --gradient-yellow:  linear-gradient(135deg, #79a7d3, #79a7d3);
