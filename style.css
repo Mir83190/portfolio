@@ -1400,4 +1400,9 @@ html { scroll-behavior:smooth; }
   font-size: 16px;
   vertical-align: middle;
 }
+.contact-link i {
+  font-size: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
 
