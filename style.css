@@ -1394,3 +1394,10 @@ html { scroll-behavior:smooth; }
     order: unset; /* Garde l'ordre naturel du HTML */
   }
 }
+
+.nav-item i {
+  margin-right: 8px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
