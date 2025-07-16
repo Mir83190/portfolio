@@ -1,7 +1,7 @@
 /* === VARIABLES === */
 :root {
   /* NOUVELLES COULEURS VIOLETTES */
-  --color-primary: #2d3748; /* Violet principal */
+  --color-primary: ##8b5cf6; /* Violet principal */
   --color-secondary: #a855f7; /* Violet secondaire */
   --color-green: #10b981;
   --color-green-2: #0d9488;
@@ -10,7 +10,9 @@
   --color-yellow: #79a7d3; 
   
   /* NOUVEAUX DÉGRADÉS VIOLETS */
-  
+  --gradient-primary: linear-gradient(135deg, #8b5cf6, #a855f7);
+  --gradient-hero:    linear-gradient(135deg, #8b5cf6, #7c3aed, #6d28d9);
+  --gradient-contact: linear-gradient(135deg, #7c3aed, #8b5cf6, #a855f7);
   --gradient-green:   linear-gradient(135deg, var(--color-green), var(--color-green-2));
   --gradient-pink:    linear-gradient(135deg, var(--color-pink), var(--color-orange));
   --gradient-yellow:  linear-gradient(135deg, #79a7d3, #79a7d3);
