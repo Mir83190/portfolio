@@ -1406,3 +1406,93 @@ html { scroll-behavior:smooth; }
   vertical-align: middle;
 }
 
+/* === CORRECTION NAVIGATION - AJOUTEZ CES RÈGLES À LA FIN DE VOTRE CSS === */
+
+/* FORCER LES LIENS À ÊTRE CLIQUABLES */
+.nav-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  pointer-events: auto !important;
+  z-index: 10;
+  position: relative;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  transition: all .3s;
+  white-space: nowrap;
+}
+
+.nav-item {
+  padding: 0 !important; /* Enlever le padding du li */
+  pointer-events: auto !important;
+  cursor: pointer;
+  position: relative;
+}
+
+/* États hover et active sur le lien, pas sur le li */
+.nav-item a:hover,
+.nav-item.active a {
+  background: var(--gradient-primary);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+  transform: scale(1.05);
+}
+
+/* S'assurer que rien ne bloque les clics */
+.nav-menu {
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 100;
+}
+
+/* Corriger les icônes dans les liens */
+.nav-item a i {
+  margin-right: 8px;
+  font-size: 16px;
+  vertical-align: middle;
+  pointer-events: none; /* Les icônes ne doivent pas capturer les clics */
+}
+
+/* Menu mobile - correction similaire */
+.menu-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 12px 16px !important;
+  color: #374151 !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: all .3s ease !important;
+  border-left: 4px solid transparent !important;
+  margin: 2px 0 !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+}
+
+.menu-item:hover {
+  background: #f8fafc !important;
+  border-left-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+  transform: translateX(8px) !important;
+}
+
+.menu-item.active {
+  background: #eff6ff !important;
+  border-left-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+}
+
+/* Empêcher les conflits avec les animations */
+.nav-item a {
+  transform-origin: center;
+}
+
+.nav-item.active {
+  background: none !important; /* Le background va sur le lien */
+  color: inherit !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
