@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Détails du projet Suivi de consommation - Bâtiment Sainte Muse">
-  <title>Mobilité du personnel de MTPM , SNCF-Réseau Mistral</title>
+  <meta name="description" content="Détails du projet Mobilité du personnel de MTPM">
+  <title>Mobilité du personnel de MTPM, SNCF-Réseau Mistral – Détails</title>
+  <!-- AJOUT DE FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="suivi-detail">
@@ -21,60 +23,60 @@
       </div>
       <nav>
         <ul class="nav-menu">
-          <li><a href="index.html#home" class="nav-item">🏠 Accueil</a></li>
-          <li><a href="index.html#about" class="nav-item">👨‍💻 À propos</a></li>
-          <li><a href="index.html#projects" class="nav-item active">🚀 Projets</a></li>
-          <li><a href="index.html#contact" class="nav-item">📧 Contact</a></li>
+          <!-- CORRECTION : Utilisation des icônes Font Awesome et structure corrigée -->
+          <li class="nav-item"><a href="index.html#home"><i class="fas fa-home"></i> Accueil</a></li>
+          <li class="nav-item"><a href="index.html#about"><i class="fas fa-user"></i> À propos</a></li>
+          <li class="nav-item active"><a href="index.html#projects"><i class="fas fa-folder-open"></i> Projets</a></li>
+          <li class="nav-item"><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
       </nav>
       <a href="mailto:amirou.labidi@gmail.com" class="btn btn--primary">Me contacter</a>
       <div class="mobile-buttons">
-        <a href="mailto:amirou.labidi@gmail.com" class="mobile-contact-btn">Me contacter</a>
         <button class="mobile-menu-btn" aria-label="Menu mobile">
-  <span id="menu-icon">☰</span>
-      </button> 
+          <span class="burger-icon" id="menu-icon">☰</span>
+        </button> 
       </div>
     </div>
     <div class="mobile-menu" id="mobile-menu">
-  <!-- Header du menu -->
-  <div class="menu-header">
-    <h3>Navigation</h3>
-    <p>Découvrez mon portfolio</p>
-  </div>
+      <!-- Header du menu -->
+      <div class="menu-header">
+        <h3>Navigation</h3>
+        <p>Découvrez mon portfolio</p>
+      </div>
 
-  <!-- Navigation -->
-  <nav class="menu-nav">
-    <a href="index.html#home" class="menu-item">
-      <span class="menu-icon">🏠</span>
-      <span>Accueil</span>
-    </a>
-    <a href="index.html#about" class="menu-item">
-      <span class="menu-icon">👨‍💻</span>
-      <span>À propos</span>
-    </a>
-    <a href="index.html#projects" class="menu-item active">
-      <span class="menu-icon">🚀</span>
-      <span>Projets</span>
-    </a>
-    <a href="index.html#contact" class="menu-item">
-      <span class="menu-icon">📧</span>
-      <span>Contact</span>
-    </a>
-  </nav>
+      <!-- Navigation -->
+      <nav class="menu-nav">
+        <a href="index.html#home" class="menu-item">
+          <span class="menu-icon">🏠</span>
+          <span>Accueil</span>
+        </a>
+        <a href="index.html#about" class="menu-item">
+          <span class="menu-icon">👨‍💻</span>
+          <span>À propos</span>
+        </a>
+        <a href="index.html#projects" class="menu-item active">
+          <span class="menu-icon">🚀</span>
+          <span>Projets</span>
+        </a>
+        <a href="index.html#contact" class="menu-item">
+          <span class="menu-icon">📧</span>
+          <span>Contact</span>
+        </a>
+      </nav>
 
-  <!-- Footer du menu -->
-  <div class="menu-footer">
-    <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
-      📧 Contactez-moi
-    </a>
-  </div>
-</div>
+      <!-- Footer du menu -->
+      <div class="menu-footer">
+        <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
+          📧 Contactez-moi
+        </a>
+      </div>
+    </div>
   </header>
    
   <!-- MAIN -->
   <main class="container">
     <section class="project-detail fade-in">
-      <h1>Mobilité du personnel de MTPM , SNCF-Réseau Mistral</h1>
+      <h1>Mobilité du personnel de MTPM, SNCF-Réseau Mistral</h1>
        
       <div class="detail-grid">
         <!-- Colonne 1 : GALERIE D'IMAGES -->
@@ -84,10 +86,10 @@
             <figure class="dashboard-figure">
               <img
                 src="assets/images/finalsncf.png"
-                alt="Dashboard de monitoring de la consommation électrique"
+                alt="Dashboard de monitoring des horaires trains et bus"
                 class="project-detail-image"
               >
-              <figcaption>Dashboard de monitoring temps réel des horaires des trains SNCF pour le personnel de MTPM.</figcaption>
+              <figcaption>Dashboard de monitoring temps réel des horaires des trains et de bus pour le personnel de MTPM.</figcaption>
             </figure>
           </div>
 
@@ -99,7 +101,7 @@
             <figure class="dashboard-figure">
               <img
                 src="assets/images/rsm.png"
-                alt="Graphiques d'analyse comparative de consommation"
+                alt="Interface horaires bus réseau Mistral"
                 class="project-detail-image"
               >
               <figcaption>Liste des horaires de bus, avec horaires en temps réel et théoriques.</figcaption>
@@ -114,7 +116,7 @@
           <div class="context-card">
             <h2>Contexte</h2>
             <p>
-              Développement de scripts Python exploitant l’API SNCF et l’API SIRI du réseau Mistral, dans le but de faciliter l’accès aux horaires pour le personnel. Deux tableaux de bord ont été créés et diffusés sur les écrans du siège afin de rendre l’information accessible au plus grand nombre.
+              Développement de scripts Python exploitant l'API SNCF et l'API SIRI du réseau Mistral, dans le but de faciliter l'accès aux horaires pour le personnel. Deux tableaux de bord ont été créés et diffusés sur les écrans du siège afin de rendre l'information accessible au plus grand nombre.
             </p>
           </div>
 
@@ -123,9 +125,9 @@
             <h2>Technologies utilisées</h2>
             <div class="tech-grid">
               <div class="tech-item">Python (script de calcul)</div>
-              <div class="tech-item">API SNCF (json)</div>
-              <div class="tech-item">API SIRI (xml)</div>
-              <div class="tech-item">Request & Post </div>
+              <div class="tech-item">API SNCF (JSON)</div>
+              <div class="tech-item">API SIRI (XML)</div>
+              <div class="tech-item">Requests & POST</div>
             </div>
           </div>
 
@@ -134,19 +136,19 @@
             <h2>Résultats obtenus</h2>
             <div class="result-item">
               <div class="result-icon">✓</div>
-              <div class="result-text">Plus de 300 consultations ont été enregistrées sur chaque tableau de bord par le personnel de MTPM.</div>
+              <div class="result-text">Plus de 300 consultations enregistrées sur chaque tableau de bord</div>
             </div>
             <div class="result-item">
               <div class="result-icon">✓</div>
-              <div class="result-text">Une meilleure accessibilité aux horaires en temps réel a été assurée pour l’ensemble des agents grâce à une interface claire et centralisée.</div>
+              <div class="result-text">Meilleure accessibilité aux horaires temps réel pour les agents</div>
             </div>
             <div class="result-item">
               <div class="result-icon">✓</div>
-              <div class="result-text">La diffusion sur les écrans du siège a permis une visibilité maximale et un gain de temps pour l'ensemble des équipes.</div>
+              <div class="result-text">Diffusion sur écrans du siège pour visibilité maximale</div>
             </div>
             <div class="result-item">
               <div class="result-icon">✓</div>
-              <div class="result-text">Le projet a renforcé la communication interne en centralisant des données clés dans un format visuel simple et accessible.</div>
+              <div class="result-text">Communication interne renforcée par centralisation des données</div>
             </div>
           </div>
 
@@ -173,7 +175,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Portfolio Amir</p>
+      <p>&copy; 💡 Développé pendant mon stage à MTPM - Plus de 350 vues par les utilisateurs de la métropole</p>
     </div>
   </footer>
    
