@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Détails du projet E-Surveillance Capteurs IoT">
   <title>E-Surveillance Capteurs IoT – Détails</title>
+  <!-- AJOUT DE FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="iot-detail">
@@ -21,54 +23,54 @@
       </div>
       <nav>
         <ul class="nav-menu">
-          <li><a href="index.html#home" class="nav-item">🏠 Accueil</a></li>
-          <li><a href="index.html#about" class="nav-item">👨‍💻 À propos</a></li>
-          <li><a href="index.html#projects" class="nav-item active">🚀 Projets</a></li>
-          <li><a href="index.html#contact" class="nav-item">📧 Contact</a></li>
+          <!-- CORRECTION : Utilisation des icônes Font Awesome et structure corrigée -->
+          <li class="nav-item"><a href="index.html#home"><i class="fas fa-home"></i> Accueil</a></li>
+          <li class="nav-item"><a href="index.html#about"><i class="fas fa-user"></i> À propos</a></li>
+          <li class="nav-item active"><a href="index.html#projects"><i class="fas fa-folder-open"></i> Projets</a></li>
+          <li class="nav-item"><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
       </nav>
       <a href="mailto:amirou.labidi@gmail.com" class="btn btn--primary">Me contacter</a>
       <div class="mobile-buttons">
-        <a href="mailto:amirou.labidi@gmail.com" class="mobile-contact-btn">Me contacter</a>
         <button class="mobile-menu-btn" aria-label="Menu mobile">
-  <span class="burger-icon" id="menu-icon">☰</span>
-</button>
+          <span class="burger-icon" id="menu-icon">☰</span>
+        </button>
       </div>
     </div>
     <div class="mobile-menu" id="mobile-menu">
-  <!-- Header du menu -->
-  <div class="menu-header">
-    <h3>Navigation</h3>
-    <p>Découvrez mon portfolio</p>
-  </div>
+      <!-- Header du menu -->
+      <div class="menu-header">
+        <h3>Navigation</h3>
+        <p>Découvrez mon portfolio</p>
+      </div>
 
-  <!-- Navigation -->
-  <nav class="menu-nav">
-    <a href="index.html#home" class="menu-item">
-      <span class="menu-icon">🏠</span>
-      <span>Accueil</span>
-    </a>
-    <a href="index.html#about" class="menu-item">
-      <span class="menu-icon">👨‍💻</span>
-      <span>À propos</span>
-    </a>
-    <a href="index.html#projects" class="menu-item active">
-      <span class="menu-icon">🚀</span>
-      <span>Projets</span>
-    </a>
-    <a href="index.html#contact" class="menu-item">
-      <span class="menu-icon">📧</span>
-      <span>Contact</span>
-    </a>
-  </nav>
+      <!-- Navigation -->
+      <nav class="menu-nav">
+        <a href="index.html#home" class="menu-item">
+          <span class="menu-icon">🏠</span>
+          <span>Accueil</span>
+        </a>
+        <a href="index.html#about" class="menu-item">
+          <span class="menu-icon">👨‍💻</span>
+          <span>À propos</span>
+        </a>
+        <a href="index.html#projects" class="menu-item active">
+          <span class="menu-icon">🚀</span>
+          <span>Projets</span>
+        </a>
+        <a href="index.html#contact" class="menu-item">
+          <span class="menu-icon">📧</span>
+          <span>Contact</span>
+        </a>
+      </nav>
 
-  <!-- Footer du menu -->
-  <div class="menu-footer">
-    <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
-      📧 Contactez-moi
-    </a>
-  </div>
-</div>
+      <!-- Footer du menu -->
+      <div class="menu-footer">
+        <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
+          📧 Contactez-moi
+        </a>
+      </div>
+    </div>
   </header>
    
   <!-- MAIN -->
@@ -92,7 +94,7 @@
           </div>
 
           <!-- Titre pour la deuxième section -->
-          <h3 class="gallery-title">Les alertes par e-mail envoyées par le script de surveillance :</h3>
+          <h3 class="gallery-title">Les alertes par e-mail envoyées par le script de surveillance</h3>
           
           <!-- Deuxième section avec image -->
           <div class="gallery-section">
@@ -102,7 +104,7 @@
                 alt="Architecture technique du système IoT"
                 class="project-detail-image"
               >
-              <figcaption>Deux mails distincts : l’un dresse une liste globale de toutes les alertes avec leur état, et l’autre envoie une alerte uniquement pour la vérification d’ouverture.</figcaption>
+              <figcaption>Deux mails distincts : l'un dresse une liste globale de toutes les alertes avec leur état, et l'autre envoie une alerte uniquement pour la vérification d'ouverture.</figcaption>
             </figure>
           </div>
         </div>
@@ -114,7 +116,7 @@
           <div class="context-card">
             <h2>Contexte</h2>
             <p>
-              J’ai conçu pour la Métropole Toulon Provence Méditerranée une pipeline basée sur l’API Requea et déployant 93 capteurs d’ouverture IoT sur leurs bâtiments. Chaque jour à 19 h, un script Python extrait et traite automatiquement les données, détecte les ouvertures anormales et déclenche l’envoi d’e-mails d’alerte directement au personnel de maintenance.
+              J'ai conçu pour la Métropole Toulon Provence Méditerranée une pipeline basée sur l'API Requea et déployant 93 capteurs d'ouverture IoT sur leurs bâtiments. Chaque jour à 19h, un script Python extrait et traite automatiquement les données, détecte les ouvertures anormales et déclenche l'envoi d'e-mails d'alerte directement au personnel de maintenance.
             </p>
           </div>
 
@@ -146,7 +148,7 @@
             </div>
             <div class="result-item">
               <div class="result-icon">✓</div>
-              <div class="result-text">Visualisation claire via un dashboard quotidien</div>
+              <div class="result-text">Surveillance de 93 capteurs automatisée</div>
             </div>
           </div>
 
@@ -173,7 +175,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Portfolio Amir</p>
+      <p>&copy; 💡 Développé pendant mon stage à MTPM - Plus de 350 vues par les utilisateurs de la métropole</p>
     </div>
   </footer>
    
