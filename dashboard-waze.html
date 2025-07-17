@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Détails du projet Waze – Stage TPM">
-  <title>Projet Waze – Détails :</title>
+  <title>Projet Waze – Détails</title>
+  <!-- AJOUT DE FONT AWESOME QUI MANQUAIT -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="waze-detail">
@@ -21,54 +23,55 @@
       </div>
       <nav>
         <ul class="nav-menu">
-          <li><a href="index.html#home" class="nav-item">🏠 Accueil</a></li>
-          <li><a href="index.html#about" class="nav-item">👨‍💻 À propos</a></li>
-          <li><a href="index.html#projects" class="nav-item active">🚀 Projets</a></li>
-          <li><a href="index.html#contact" class="nav-item">📧 Contact</a></li>
+          <!-- CORRECTION : Utilisation des icônes Font Awesome sans émojis -->
+          <li class="nav-item"><a href="index.html#home"><i class="fas fa-home"></i> Accueil</a></li>
+          <li class="nav-item"><a href="index.html#about"><i class="fas fa-user"></i> À propos</a></li>
+          <li class="nav-item active"><a href="index.html#projects"><i class="fas fa-folder-open"></i> Projets</a></li>
+          <li class="nav-item"><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
       </nav>
       <a href="mailto:amirou.labidi@gmail.com" class="btn btn--primary">Me contacter</a>
       <div class="mobile-buttons">
-        <a href="mailto:amirou.labidi@gmail.com" class="mobile-contact-btn">Me contacter</a>
         <button class="mobile-menu-btn" aria-label="Menu mobile">
-  <span class="burger-icon" id="menu-icon">☰</span>
-     </button>
+          <span class="burger-icon" id="menu-icon">☰</span>
+        </button>
       </div>
     </div>
     <div class="mobile-menu" id="mobile-menu">
-  <!-- Header du menu -->
-  <div class="menu-header">
-    <h3>Navigation</h3>
-    <p>Découvrez mon portfolio</p>
-  </div>
+      <!-- Header du menu -->
+      <div class="menu-header">
+        <h3>Navigation</h3>
+        <p>Découvrez mon portfolio</p>
+      </div>
 
-  <!-- Navigation -->
-  <nav class="menu-nav">
-    <a href="index.html#home" class="menu-item">
-      <span class="menu-icon">🏠</span>
-      <span>Accueil</span>
-    </a>
-    <a href="index.html#about" class="menu-item">
-      <span class="menu-icon">👨‍💻</span>
-      <span>À propos</span>
-    </a>
-    <a href="index.html#projects" class="menu-item active">
-      <span class="menu-icon">🚀</span>
-      <span>Projets</span>
-    </a>
-    <a href="index.html#contact" class="menu-item">
-      <span class="menu-icon">📧</span>
-      <span>Contact</span>
-    </a>
-  </nav>
+      <!-- Navigation -->
+      <nav class="menu-nav">
+        <!-- CORRECTION : Liens de navigation corrects -->
+        <a href="index.html#home" class="menu-item">
+          <span class="menu-icon">🏠</span>
+          <span>Accueil</span>
+        </a>
+        <a href="index.html#about" class="menu-item">
+          <span class="menu-icon">👨‍💻</span>
+          <span>À propos</span>
+        </a>
+        <a href="index.html#projects" class="menu-item active">
+          <span class="menu-icon">🚀</span>
+          <span>Projets</span>
+        </a>
+        <a href="index.html#contact" class="menu-item">
+          <span class="menu-icon">📧</span>
+          <span>Contact</span>
+        </a>
+      </nav>
 
-  <!-- Footer du menu -->
-  <div class="menu-footer">
-    <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
-      📧 Contactez-moi
-    </a>
-  </div>
-</div>
+      <!-- Footer du menu -->
+      <div class="menu-footer">
+        <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
+          📧 Contactez-moi
+        </a>
+      </div>
+    </div>
   </header>
    
   <!-- MAIN -->
@@ -92,17 +95,17 @@
           </div>
 
           <!-- Titre pour la deuxième section -->
-          <h3 class="gallery-title">Application de détection des nids de poule : </h3>
+          <h3 class="gallery-title">Application de détection des nids de poules :</h3>
           
           <!-- Deuxième section avec image -->
           <div class="gallery-section">
             <figure class="dashboard-figure">
               <img
-                src="assets/images/mirorsm.png"
+                src="assets/images/applipothole.png"
                 alt="Cartographie des alertes Waze"
                 class="project-detail-image"
               >
-              <figcaption>Visualisation des nids de poule via l'application avec une carte et Google streets maps.</figcaption>
+              <figcaption>Visualisation des nids de poules via l'application avec une carte et Google streets maps.</figcaption>
             </figure>
           </div>
         </div>
@@ -114,7 +117,7 @@
           <div class="context-card">
             <h2>Contexte</h2>
             <p>
-             Au cours de mon stage à la Métropole Toulon Provence Méditerranée, j’ai tiré parti d’un accès privilégié aux logs administrateurs de Waze pour concevoir et déployer un système d’analyse complet des alertes trafic. Ce dispositif automatise l’identification et la cartographie des accidents, assure un suivi en temps réel des embouteillages via des cartes dynamiques ESRI et orchestre des traitements planifiés pour enrichir et diffuser les résultats. À titre d’exemple, nous avons mis en place un cas d’usage exploitant les alertes « nids de poule » de Waze pour détecter et localiser précisément les dégradations routières sur l’ensemble de la métropole.
+             Au cours de mon stage à la Métropole Toulon Provence Méditerranée, j'ai tiré parti d'un accès privilégié aux logs administrateurs de Waze pour concevoir et déployer un système d'analyse complet des alertes trafic. Ce dispositif automatise l'identification et la cartographie des accidents, assure un suivi en temps réel des embouteillages via des cartes dynamiques ESRI et orchestre des traitements planifiés pour enrichir et diffuser les résultats. À titre d'exemple, nous avons mis en place un cas d'usage exploitant les alertes « nids de poule » de Waze pour détecter et localiser précisément les dégradations routières sur l'ensemble de la métropole.
             </p>
           </div>
 
@@ -173,7 +176,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Portfolio Amir</p>
+      <p>&copy; 💡 Développé pendant mon stage à MTPM - Plus de 350 vues par les utilisateurs de la métropole</p>
     </div>
   </footer>
    
