@@ -1496,3 +1496,239 @@ html { scroll-behavior:smooth; }
   box-shadow: none !important;
   transform: none !important;
 }
+
+/* === CARROUSEL D'IMAGES === */
+.image-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  background: white;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover img {
+  transform: scale(1.02);
+}
+
+/* Flèches de navigation */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--project-color);
+  transition: all 0.3s ease;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.carousel-nav:hover {
+  background: var(--project-color);
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav.prev { left: 20px; }
+.carousel-nav.next { right: 20px; }
+
+/* Indicateurs */
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.carousel-indicator.active {
+  background: var(--project-color);
+  border-color: white;
+  transform: scale(1.2);
+}
+
+.carousel-indicator:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Caption */
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 40px 30px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-container { height: 300px; }
+  .carousel-nav { width: 40px; height: 40px; font-size: 16px; }
+  .carousel-nav.prev { left: 10px; }
+  .carousel-nav.next { right: 10px; }
+  .carousel-caption { font-size: 14px; padding: 30px 20px 15px; }
+}
+
+/* === CARROUSEL WAZE SIMPLE === */
+.waze-carousel {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.waze-slides {
+  position: relative;
+  width: 100%;
+}
+
+.waze-slide {
+  display: none;
+  width: 100%;
+}
+
+.waze-slide.active {
+  display: block;
+}
+
+.waze-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Contrôles externes */
+.waze-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.waze-nav {
+  width: 60px;
+  height: 60px;
+  background: var(--project-color);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+}
+
+.waze-nav:hover {
+  background: #2563eb;
+  transform: scale(1.1);
+}
+
+.waze-indicators {
+  display: flex;
+  gap: 16px;
+}
+
+.waze-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.waze-dot.active {
+  background: var(--project-color);
+  transform: scale(1.3);
+}
+
+.waze-caption {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .waze-nav {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .waze-controls {
+    padding: 0 10px;
+  }
+  
+  .waze-caption {
+    font-size: 14px;
+  }
+}
