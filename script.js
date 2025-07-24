@@ -295,3 +295,70 @@
 
   console.log('✅ Navigation simple prête - Tout devrait marcher !');
 })();
+
+// === CARROUSEL WAZE SIMPLE ===
+let wazeCurrentSlide = 0;
+const wazeCaptions = [
+  "Dashboard temps réel des accidents et bouchons Waze fait sur ArcGIS dashboard.",
+  "Vue alternative du tableau de bord avec analytics avancés et métriques détaillées."
+];
+
+function wazeUpdateCarousel() {
+  const slides = document.querySelectorAll('.waze-slide');
+  const dots = document.querySelectorAll('.waze-dot');
+  const caption = document.getElementById('waze-caption');
+  
+  // Cacher tous les slides
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  
+  // Afficher le slide actuel
+  if (slides[wazeCurrentSlide]) {
+    slides[wazeCurrentSlide].classList.add('active');
+  }
+  if (dots[wazeCurrentSlide]) {
+    dots[wazeCurrentSlide].classList.add('active');
+  }
+  if (caption && wazeCaptions[wazeCurrentSlide]) {
+    caption.textContent = wazeCaptions[wazeCurrentSlide];
+  }
+}
+
+function wazeChangeSlide(direction) {
+  const totalSlides = document.querySelectorAll('.waze-slide').length;
+  
+  wazeCurrentSlide += direction;
+  
+  if (wazeCurrentSlide >= totalSlides) {
+    wazeCurrentSlide = 0;
+  } else if (wazeCurrentSlide < 0) {
+    wazeCurrentSlide = totalSlides - 1;
+  }
+  
+  wazeUpdateCarousel();
+}
+
+function wazeGoToSlide(slideIndex) {
+  wazeCurrentSlide = slideIndex;
+  wazeUpdateCarousel();
+}
+
+// Initialisation
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.querySelector('.waze-carousel')) {
+    wazeUpdateCarousel();
+    
+    // Support clavier
+    document.addEventListener('keydown', function(e) {
+      if (document.querySelector('.waze-carousel')) {
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          wazeChangeSlide(-1);
+        } else if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          wazeChangeSlide(1);
+        }
+      }
+    });
+  }
+});
