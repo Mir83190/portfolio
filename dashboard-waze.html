@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Détails du projet Waze – Stage TPM">
   <title>Projet Waze – Détails</title>
-  <!-- AJOUT DE FONT AWESOME QUI MANQUAIT -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +22,6 @@
       </div>
       <nav>
         <ul class="nav-menu">
-          <!-- CORRECTION : Utilisation des icônes Font Awesome sans émojis -->
           <li class="nav-item"><a href="index.html#home"><i class="fas fa-home"></i> Accueil</a></li>
           <li class="nav-item"><a href="index.html#about"><i class="fas fa-user"></i> À propos</a></li>
           <li class="nav-item active"><a href="index.html#projects"><i class="fas fa-folder-open"></i> Projets</a></li>
@@ -38,15 +36,11 @@
       </div>
     </div>
     <div class="mobile-menu" id="mobile-menu">
-      <!-- Header du menu -->
       <div class="menu-header">
         <h3>Navigation</h3>
         <p>Découvrez mon portfolio</p>
       </div>
-
-      <!-- Navigation -->
       <nav class="menu-nav">
-        <!-- CORRECTION : Liens de navigation corrects -->
         <a href="index.html#home" class="menu-item">
           <span class="menu-icon">🏠</span>
           <span>Accueil</span>
@@ -64,8 +58,6 @@
           <span>Contact</span>
         </a>
       </nav>
-
-      <!-- Footer du menu -->
       <div class="menu-footer">
         <a href="mailto:amirou.labidi@gmail.com" class="menu-footer-btn">
           📧 Contactez-moi
@@ -82,16 +74,43 @@
       <div class="detail-grid">
         <!-- Colonne 1 : GALERIE D'IMAGES -->
         <div class="project-gallery">
-          <!-- Première section avec image -->
+          <!-- Première section avec carrousel simplifié -->
           <div class="gallery-section">
-            <figure class="dashboard-figure">
-              <img
-                src="assets/images/waze-dashboard.png"
-                alt="Capture d'écran du dashboard Waze"
-                class="project-detail-image"
-              >
-              <figcaption>Dashboard temps réel des accidents et bouchons Waze fait sur ArcGIS dashboard.</figcaption>
-            </figure>
+            
+            <!-- Carrousel d'images -->
+            <div class="waze-carousel">
+              <div class="waze-slides" id="carousel-slides">
+                <!-- Slide 1 -->
+                <div class="waze-slide active">
+                  <img src="assets/images/waze-dashboard.png" alt="Dashboard Waze principal">
+                </div>
+                <!-- Slide 2 -->
+                <div class="waze-slide">
+                  <img src="assets/images/amirewaze.png" alt="Dashboard Waze secondaire">
+                </div>
+              </div>
+            </div>
+            
+            <!-- Contrôles externes -->
+            <div class="waze-controls">
+              <button class="waze-nav prev" onclick="wazeChangeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              
+              <div class="waze-indicators">
+                <div class="waze-dot active" onclick="wazeGoToSlide(0)"></div>
+                <div class="waze-dot" onclick="wazeGoToSlide(1)"></div>
+              </div>
+              
+              <button class="waze-nav next" onclick="wazeChangeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            
+            <!-- Caption -->
+            <div class="waze-caption" id="waze-caption">
+              Dashboard temps réel des accidents et bouchons Waze fait sur ArcGIS dashboard, les bouchons sont représentés sous forme le lignes en temps rééel basé sur les prédictions de waze.
+            </div>
           </div>
 
           <!-- Titre pour la deuxième section -->
@@ -105,15 +124,13 @@
                 alt="Cartographie des alertes Waze"
                 class="project-detail-image"
               >
-              <figcaption>Visualisation des nids de poule via l'application avec une carte et Google streets maps.</figcaption>
+              <figcaption>Visualisation des nids de poule via l'application avec une carte et Google streets maps. 1</figcaption>
             </figure>
           </div>
         </div>
          
         <!-- Colonne 2 : CONTENU STYLÉ AVEC CARTES -->
         <div class="project-detail-content">
-          
-          <!-- Carte Contexte -->
           <div class="context-card">
             <h2>Contexte</h2>
             <p>
@@ -121,7 +138,6 @@
             </p>
           </div>
 
-          <!-- Carte Technologies -->
           <div class="tech-card">
             <h2>Technologies utilisées</h2>
             <div class="tech-grid">
@@ -132,7 +148,6 @@
             </div>
           </div>
 
-          <!-- Carte Résultats -->
           <div class="results-card">
             <h2>Résultats obtenus</h2>
             <div class="result-item">
@@ -153,7 +168,6 @@
             </div>
           </div>
 
-          <!-- Boutons d'action -->
           <div class="project-buttons">
             <a
               href="https://github.com/Mir83190/Projet-waze-/blob/main/waze%20script"
@@ -167,7 +181,6 @@
               ← Retour aux projets
             </a>
           </div>
-
         </div>
       </div>
     </section>
